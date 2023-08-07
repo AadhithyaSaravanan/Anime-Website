@@ -15,5 +15,4 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 });
 
 document.getElementById("cancelBtn").addEventListener("click", function() {
-window.location.hash = "anime.html"});
-
+    window.location.href = "anime.html"});
