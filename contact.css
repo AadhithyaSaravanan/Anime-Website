@@ -68,3 +68,21 @@ button {
 button:hover {
     background-color: #3e3b3b;
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-rows: auto auto auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
