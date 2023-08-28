@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime Library Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="anime.css" />
     <link rel="icon" type="image/x-icon" href="favicon1.ico">
     <script>
@@ -18,22 +19,21 @@
   </head>
   <body>
     <header>
-      <a href="anime.html"> <img src="https://rb.gy/l7k1r" alt="Header Image"></a>
-        <mark>Anime Library</mark>
-
-      <nav>
-        <ul>
-            <li><a href="anime.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            
-            <li><a href="contact.html" target="_blank">Contact</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <div class="sign">
-            <li><a href="signout.html">Signout</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="anime.html" class="navbar-brand"><img src="https://rb.gy/l7k1r" alt="Header Image">Anime Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="anime.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" href="videos.html">Videos</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link" href="signout.html">Signout</a>
             </div>
-        </ul>
+        </div>
     </nav>
-
       
     </header>
     <main>
@@ -209,5 +209,9 @@
       <img src="https://rb.gy/l7k1r" alt="footer image" />
       &copy Copyright 2023 Anime Library All Rights Reserved
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   </body>
 </html>

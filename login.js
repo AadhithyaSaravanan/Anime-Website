@@ -1,6 +1,7 @@
 document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
     const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value
     const password = document.getElementById("password").value;
 
     // Retrieve the registered user from localStorage
@@ -8,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     // Check if the entered username and password match the registered user's credentials
     if (
-        registeredUser && username === registeredUser.username && password === registeredUser.password
+        registeredUser && username === registeredUser.username && password === registeredUser.password && email === registeredUser.email
     ) {
         // Set a flag in localStorage to indicate successful login
         localStorage.setItem("isLoggedIn", "true");
